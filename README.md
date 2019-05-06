@@ -1,5 +1,5 @@
-
-# multimedia
+ multimedia
+ ======
 Lossy and lossless compression
 
 Installation
