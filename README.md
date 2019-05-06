@@ -1,5 +1,5 @@
 
-#Lossy and lossless compression
+# Lossy and lossless compression
 
 Installation
 ==============
