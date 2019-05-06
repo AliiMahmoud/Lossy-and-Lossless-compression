@@ -1,8 +1,7 @@
 
 Lossy and lossless compression
 ================
-Imlemented using java JDK 8
+Installation
 ==============
-GUI
--
-Done by JavaFx
+JDK 8;
+JavaFx to run the GUI;
