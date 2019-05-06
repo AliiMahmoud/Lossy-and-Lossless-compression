@@ -8,4 +8,4 @@ JavaFx to run the GUI <br />
 
 Algorithms
 -
-1- LZ77 <\ br>
+1- LZ77 </ br>
