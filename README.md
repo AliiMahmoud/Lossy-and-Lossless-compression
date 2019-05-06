@@ -1,5 +1,5 @@
 
-# Lossy and lossless compression
+Lossy and lossless compression
 ================
 Imlemented using java JDK 8
 ==============
