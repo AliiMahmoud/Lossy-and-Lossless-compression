@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <TextField fx:id="source1" alignment="CENTER" layoutX="103.0" layoutY="92.0" prefHeight="25.0" prefWidth="136.0" promptText="Source file Name" />
+      <TextField fx:id="source2" alignment="CENTER" layoutX="103.0" layoutY="140.0" prefHeight="25.0" prefWidth="136.0" promptText="Output file name" />
+      <Button fx:id="compressBtn" alignment="CENTER" layoutX="20.0" layoutY="356.0" mnemonicParsing="false" onAction="#ActionCompress" prefHeight="36.0" prefWidth="136.0" text="compress">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="decompressBtn" layoutX="180.0" layoutY="355.0" mnemonicParsing="false" onAction="#ActionDecompress" prefHeight="37.0" prefWidth="136.0" text="decompress">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <MenuButton fx:id="bits" alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="289.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="156.0" text="Number Of Vectors" textOverrun="CLIP">
+        <items>
+            <RadioMenuItem fx:id="bit1" mnemonicParsing="false" onAction="#levelOne" text="1" />
+            <RadioMenuItem fx:id="bit2" mnemonicParsing="false" onAction="#levelTwo" text="2 " />
+            <RadioMenuItem fx:id="bit3" mnemonicParsing="false" onAction="#levelThree" text="4" />
+            <RadioMenuItem fx:id="bit4" mnemonicParsing="false" onAction="#levelFour" text="8" />
+            <RadioMenuItem fx:id="bit5" mnemonicParsing="false" onAction="#levelFive" text="16" />
+            <RadioMenuItem fx:id="bit6" mnemonicParsing="false" onAction="#levelSix" text="32" />
+            <RadioMenuItem fx:id="bit7" mnemonicParsing="false" onAction="#level7" text="64" />
+            <RadioMenuItem fx:id="bit8" mnemonicParsing="false" onAction="#level8" text="128" />
+        </items>
+      </MenuButton>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="342.0" AnchorPane.bottomAnchor="432.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+        <menus>
+          <Menu fx:id="close" mnemonicParsing="false" text="close">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" onAction="#clear" text="clear">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#clear" text="clear text fileds" />
+                  <MenuItem mnemonicParsing="false" onAction="#clearall" text="clear all " />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="size" alignment="CENTER" layoutX="133.0" layoutY="244.0" prefHeight="25.0" prefWidth="77.0" promptText="Vector Size" />
+      <Label fx:id="done" alignment="CENTER" layoutX="93.0" layoutY="401.0" prefHeight="38.0" prefWidth="156.0" text="Done." textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
