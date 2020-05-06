@@ -9,9 +9,9 @@ Installation
 
 Algorithms
 -
-1- LZ77 <br />
-2- LZ78 <br />
-3- LZW <br />
-4- Standard Huffman <br />
-5- Adaptive Huffman <br />
-6- scaler quantizer <br />
+ - LZ77 <br />
+ - LZ78 <br />
+ - LZW <br />
+ - Standard Huffman <br />
+ - Adaptive Huffman <br />
+ - scaler quantizer <br />
